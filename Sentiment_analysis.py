@@ -6,7 +6,7 @@ from nltk.corpus import stopwords
 import matplotlib.pyplot as pyt
 text=open('read.txt',encoding='utf-8').read()
 lower_case=text.lower()
-cleaned_txt=lower_case.translate(str.maketrans('','',string.punctuation))
+cleaned_text=lower_case.translate(str.maketrans('','',string.punctuation))
 
 
 tokenized_words=word_tokenize(cleaned_text,"english")
