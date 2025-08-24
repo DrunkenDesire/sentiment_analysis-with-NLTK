@@ -1,8 +1,9 @@
-# cleaning text 
+#  cleaning text 
 import string
 from collections import Counter
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import matplotlib.pyplot as pyt
 text=open('read.txt',encoding='utf-8').read()
 lower_case=text.lower()
@@ -33,3 +34,18 @@ ax1.bar(w.keys(),w.values())
 fig.autofmt_xdate()
 pyt.savefig('graph.png')
 pyt.show()
+
+
+def sentiment_analyse(sentiment_text):
+  score=SentimentIntensityAnalyzer().polarity_scores(sentiment_text)
+  print(score)
+  neg=score['neg']
+  pos=score['pos']
+  if neg>pos:
+      print("Negative text")
+  elif pos>neg:
+      print("Positive text")
+  else:
+      print("Neutral text ")
+  
+sentiment_analyse(cleaned_text)
