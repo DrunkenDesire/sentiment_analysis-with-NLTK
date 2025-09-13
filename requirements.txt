@@ -1,0 +1,10 @@
+# Required Python libraries for Sentiment Analysis Project
+
+# Natural Language Toolkit for text processing
+nltk
+
+# Plotting library for visualizations
+matplotlib
+
+# Machine learning library for metrics like accuracy
+scikit-learn
