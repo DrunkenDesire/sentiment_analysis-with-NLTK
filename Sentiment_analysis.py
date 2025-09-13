@@ -1,5 +1,6 @@
 #  cleaning text 
 import string
+from sklearn.metrics import accuracy_score
 from collections import Counter
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
@@ -49,3 +50,12 @@ def sentiment_analyse(sentiment_text):
       print("Neutral text ")
   
 sentiment_analyse(cleaned_text)
+
+# true_labels: list of ground truth sentiment labels from your test set
+# predicted_labels: list from your model's predictions
+true_labels = ['positive', 'negative', 'neutral']  # actual labels
+predicted_labels = ['positive', 'negative', 'positive']  # model predictions
+
+
+accuracy = accuracy_score(true_labels, predicted_labels)
+print("Accuracy:", accuracy)
