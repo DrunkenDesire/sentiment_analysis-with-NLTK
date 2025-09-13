@@ -65,7 +65,7 @@ Terminal Output:
 
 {'neg': 0.087, 'neu': 0.751, 'pos': 0.162, 'compound': 0.9996}
 Positive text
-
+Accuracy: 0.666666666
 
 Graph:
 
