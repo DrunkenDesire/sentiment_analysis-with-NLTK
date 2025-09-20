@@ -62,10 +62,15 @@ Outputs
 
 📊 Example Output
 Terminal Output:
+For sentiment_analyses_accuracy.py
 
-{'neg': 0.087, 'neu': 0.751, 'pos': 0.162, 'compound': 0.9996}
-Positive text
-Accuracy: 0.666666666
+Model Accuracy: 67.54%
+['positive' 'negative' 'neutral']
+
+For sentiment_analysis.py 
+
+
+
 
 Graph:
 
