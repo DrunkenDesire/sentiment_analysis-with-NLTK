@@ -69,7 +69,8 @@ Model Accuracy: 67.54%
 
 For sentiment_analysis.py 
 
-
+{'neg': 0.087, 'neu': 0.751, 'pos': 0.162, 'compound': 0.9996}
+Positive text
 
 
 Graph:
